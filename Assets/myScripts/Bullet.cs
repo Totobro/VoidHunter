@@ -2,8 +2,14 @@ using UnityEngine;
 using System.Collections;
 
 public class Bullet : MonoBehaviour {
-    public float speed;
+    public float 		speed;
+	public GameObject	particles;
 	// Use this for initialization
+	
+	void	OnDestroy() {
+		Instantiate(particles, transform.position, transform.rotation);
+	}
+	
 	void Start () {
 	
 	}

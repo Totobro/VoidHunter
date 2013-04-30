@@ -6,7 +6,7 @@ public class WSimpleShooter : MonoBehaviour, Weapons {
     public GameObject[]	bulletPrefabs;
     public int			level = 0;
     private double 		nextFire = 0;
-
+	
     // Use this for initialization
 	void Start () {
 	
